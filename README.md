@@ -26,6 +26,14 @@ A console project designed for a first-year software engineering student. It hel
 - Estimate a GPA based on entered data
 - Read motivational study tips to stay on track
 
+## Number Guessing Game
+ A console game that:
+- Generates a random number between 1 and 100
+- Gives the player up to 10 attempts to guess the number
+- Provides feedback after each guess (too high/too low)
+- Offers the option to play multiple rounds without restarting the program
+
+
 ## Skills Demonstrated
 - User input/output with scanf and printf
 - Working with strings and structures
