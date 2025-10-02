@@ -44,9 +44,7 @@ A console project designed for a first-year software engineering student. It hel
 - Basic arithmetic operations and simple algorithms
 - Character and integer data types
 
-## About
-Second-year Software Engineering student building foundational programming skills in C. Each project represents hands-on learning and problem-solving practice.
-First-year Software Engineering student building foundational programming skills in C. Each project represents hands-on learning and problem-solving practice.
+
 
 ## Next Steps
 - Exploring more complex C programs
