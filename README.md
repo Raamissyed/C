@@ -1,57 +1,44 @@
 # Learning C Programming
 
-This repository contains my C programming practice projects as I learn software development.
+A collection of small command-line programs I built while learning C. These projects focus on writing functions, handling input, working with control flow, and using structs and arrays.
 
 ## Projects
 
-### Age Calculator
-A simple C program that:
-- Takes user input for birth year
-- Calculates current age based on 2024
-- Displays the result
+| Project | What it does | Source |
+| --- | --- | --- |
+| Age Calculator | Estimates age from a birth year using the current calendar year. Exact age depends on whether the birthday has passed. | [`age_calculator.c`](age_calculator.c) |
+| Simple Calculator | Performs addition, subtraction, multiplication, and division, with invalid-input and division-by-zero checks. | [`simple_calculator.c`](simple_calculator.c) |
+| First-Year Study Organizer | Stores up to 20 courses, lists grades and credit values, and estimates a grade-based score. | [`organizer.c`](organizer.c) |
+| Number Guessing Game | Generates a number from 1 to 100 and gives feedback for up to 10 guesses, with an option to replay. | [`number_guesser.c`](number_guesser.c) |
 
-My first C program written from scratch!
+> **Note on the Study Organizer:** Its displayed “GPA” uses a simple approximation (weighted average percentage divided by 25). It is **not** an official university GPA conversion.
 
-### Simple Calculator
-A basic calculator program that:
-- Accepts two numbers from the user
-- Performs basic arithmetic operations (+, -, *, /)
-- Returns the calculated result
-- Uses conditional statements to handle different operations
+## Run a project
 
-### First-Year Study Organizer
-A console project designed for a first-year software engineering student. It helps to:
-- Add courses with credit values and grades
-- View a neatly formatted course list
-- Estimate a GPA based on entered data
-- Read motivational study tips to stay on track
+You need a C compiler such as GCC or Clang. From the repository directory, compile and run any project, for example:
 
-## Number Guessing Game
- A console game that:
-- Generates a random number between 1 and 100
-- Gives the player up to 10 attempts to guess the number
-- Provides feedback after each guess (too high/too low)
-- Offers the option to play multiple rounds without restarting the program
+```sh
+cc -std=c11 -Wall -Wextra -pedantic simple_calculator.c -o simple_calculator
+./simple_calculator
+```
 
+To try a different program, replace `simple_calculator` with `age_calculator`, `organizer`, or `number_guesser` in both commands. On Windows, the executable may have an `.exe` suffix.
 
-## Skills Demonstrated
-- User input/output with scanf and printf
-- Working with strings and structures
-- Variable declaration and assignment
-- Conditional logic (if statements)
-- Basic arithmetic operations
-- Conditional logic (if statements and switch statements)
-- Basic arithmetic operations and simple algorithms
-- Character and integer data types
+### Example: Simple Calculator
 
+```text
+Enter first number: 12
+Enter operation (+, -, *, /): /
+Enter second number: 4
+Answer: 3.00
+```
 
+## Skills practised
 
-## Next Steps
-- Exploring more complex C programs
-- Building projects that solve real-world problems
-- Expanding into other programming language
+- C syntax, functions, and control flow
+- Reading and validating console input
+- Arrays, strings, and `struct` values
+- Basic arithmetic, loops, and random numbers
+- Compiling and running command-line programs
 
-## Next Steps
-- Exploring more complex C programs
-- Building projects that solve real-world problems
-- Expanding into other programming languages
+These are foundational learning exercises, not production applications. I'm continuing to build more substantial software projects as I develop my skills.
